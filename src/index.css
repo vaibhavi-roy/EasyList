@@ -276,6 +276,7 @@ Grocery List
 
 .grocery-container {
   margin-top: 2rem;
+  overflow: hidden;
 }
 
 .grocery-item {
@@ -288,6 +289,7 @@ Grocery List
   border-radius: var(--radius);
   text-transform: capitalize;
   font-family: 'Alkatra', cursive;
+
 }
 
 .grocery-item:hover {
@@ -305,6 +307,8 @@ Grocery List
   letter-spacing: 2px;
   transition: var(--transition);
   font-family: 'Alkatra', cursive;
+  width: 80%;
+  overflow: scroll;
 }
 
 .edit-btn,
@@ -354,4 +358,8 @@ Grocery List
 
 .clear-btn:hover {
   color: #fff;
+}
+
+.title::-webkit-scrollbar {
+  display: none;
 }
